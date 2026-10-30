@@ -182,8 +182,8 @@ input.name{font-family:inherit;font-size:15px;padding:8px 12px;border-radius:10p
   </div>
 </div>
 
-<script>var exports={};</script><script src="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.cjs"></script><script>window.THREE=exports;</script>
-<script>// MASAR – content data (Arabic). Edit texts here; app.js reads them.
+<script type="module">import * as T from "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js"; window.THREE=T;</script>
+<script type="module">// MASAR – content data (Arabic). Edit texts here; app.js reads them.
 window.MASAR_DATA = {
   FEEDBACK_URL: "", // ضعي هنا رابط Google Form لاستطلاع الرأي (اختياري)
   WORD: "اكتشفي",
@@ -366,7 +366,7 @@ window.MASAR_DATA = {
   scale: ["لا تشبهني", "تشبهني قليلًا", "تشبهني إلى حد ما", "تشبهني كثيرًا"]
 };
 </script>
-<script>(function () {
+<script type="module">(function () {
 "use strict";
 const T = window.THREE, D = window.MASAR_DATA;
 const $ = (id) => document.getElementById(id);
